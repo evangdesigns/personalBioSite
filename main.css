@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+    margin:0 auto;
+    padding:0; 
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    margin-bottom:-5px;
+}
+ul#navLinks,
+ul#navFootLinks,
+ul#social {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+ul#navLinks > li {
+    display:inline;
+    float:center;
+}
+.fullPage{
+
+}
+#bioPage {
+
+}
+#technologiesPage {
+
+}
+#projectsPage{
+
+}
+footer{
+    display: flex;
+    flex-direction:row;
+    background-color: #333333;
+    justify-content:space-between;
+    padding:10px 50px;
+}
+.pageFooter {
+
+}
+.leftFoot {
+
+}
+.rightFoot{
+    
+}
+footer > div {
+    color:#ffffff;
+}
