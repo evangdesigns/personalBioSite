@@ -3,24 +3,17 @@ body {
     font-family: 'Roboto', sans-serif;
     width:100%;
     margin:0 auto;
-    padding:0; 
+    padding:0;
+}
+.navbar{
+    background-color:#333333 !important;
+
 }
 h1 {
     text-align: center;
 }
 h4 {
     margin-bottom:-5px;
-}
-ul#navLinks,
-ul#navFootLinks,
-ul#social {
-    list-style:none;
-    margin: 0;
-    padding: 0;
-}
-ul#navLinks > li {
-    display:inline;
-    float:center;
 }
 .fullPage{
 
@@ -32,23 +25,32 @@ ul#navLinks > li {
 
 }
 #projectsPage{
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
+.projectCard{
+    background-color: rgba(255, 255, 255, 75%);
+    width:300px;
+    padding: 10px;
+}
 footer{
-    display: flex;
-    flex-direction:row;
-    background-color: #333333;
-    justify-content:space-between;
+    background-color: #343a40;
+    
     padding:10px 50px;
 }
 .pageFooter {
-
+    justify-content:center
 }
-.leftFoot {
-
+.logoFoot {
+ 
 }
-.rightFoot{
-    
+.navFoot{
+ 
+}
+i.socialFoot{
+    font-size: 4em;
+    color:#ffffff;
 }
 footer > div {
     color:#ffffff;
