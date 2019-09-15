@@ -31,7 +31,7 @@ const printToDom = (divId, textToPrint) => {
     for (let i = 0; i < projectsArr.length; i ++) {
         const pro = projectsArr[i]
         domString += `
-            <div class='projectCard'>
+            <div class="projectCard">
                 <div class="projectTitle">
                         <h1>${pro.title}</h1>
                 </div>
