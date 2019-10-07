@@ -15,14 +15,8 @@ h1 {
 h4 {
     margin-bottom:-5px;
 }
-.fullPage{
-
-}
-#bioPage {
-
-}
-#technologiesPage {
-
+.fullPage {
+    height:60vh;
 }
 #projectsPage{
     justify-content: center;
@@ -42,16 +36,19 @@ footer{
 .pageFooter {
     justify-content:center
 }
-.logoFoot {
- 
-}
-.navFoot{
- 
-}
 i.socialFoot{
     font-size: 4em;
     color:#ffffff;
 }
 footer > div {
     color:#ffffff;
+}
+#bioPage{
+    display: flex;
+}
+#technologiesPage{
+    display: none !important;
+}
+#projectsPage{
+    display:none !important;
 }
