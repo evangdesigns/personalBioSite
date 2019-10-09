@@ -28,6 +28,7 @@ const printToDom = (divId, textToPrint) => {
   
   const projectFilter = (projectsArr) => {
     let domString = ''
+    domString = `<h1 class="text-center">Projects</h1>`
     for (let i = 0; i < projectsArr.length; i ++) {
         const pro = projectsArr[i]
         domString += `
@@ -64,25 +65,52 @@ const selectedProjects = [];
 projectFilter(selectedProjects);
 
 
-const navControl = () => {
-    let bioPage = document.getElementById('bioPage');
-    let techPage = document.getElementById('technologiesPage');
-    let projPage = document.getElementById('projectsPage');
-    if (bioPage.style.display === 'none') {
-      bioPage.style.display = 'flex'
-      techPage.style.display ='none'
-      projPage.style.display = 'none';
-    } else if (techPage.style.display === 'none') {
-      techPage.style.display = 'flex'
-      bioPage.style.display  = 'none'
-      projPage.style.display = 'none';
-    } else if (projPage.style.display === 'none') {
-      projPage.style.display = 'flex'
-      bioPage.style.display = 'none'
-      techPage.style.display = 'none';
+let bioPage = document.getElementById('bioPage');
+let techPage = document.getElementById('technologiesPage');
+let projPage = document.getElementById('projectsPage');
+
+const showBio = () => {
+    bioPage.classList.remove('hide');
+    techPage.classList.add('hide');
+    projPage.classList.add('hide');
+};
+
+const showTech = () => {
+    bioPage.classList.add('hide');
+    techPage.classList.remove('hide');
+    projPage.classList.add('hide');
+};
+
+const showProj = () => {
+    bioPage.classList.add('hide');
+    techPage.classList.add('hide');
+    projPage.classList.remove('hide');
+};
+
+const navControl = (e) => {   
+    if (e.target.id === 'navToBio') {
+      showBio()
+      
+    } else if (e.target.id === 'navToTechnologies') {
+      showTech()
+        
+    } else if (e.target.id === 'navToProjects') {
+      showProj()
       };
   };
 
-//   document.getElementById('navToBio').addEventListener('click', navControl);
-//   document.getElementById("navToTechnologies").addEventListener('click', navControl);
-//   document.getElementById("navToProjects").addEventListener('click', navControl);
+const eventListen = () => {
+    let x = document.getElementsByClassName('jumbotron')
+    for (i = 0; i < x.length; i += 1) {
+        let current = x[i];
+        console.log(current);
+        current.addEventListener('click', (e) => {
+            navControl(e);
+        })
+    }
+};
+ 
+eventListen();
+document.getElementById("navToBio").addEventListener('click', navControl);
+document.getElementById("navToTechnologies").addEventListener('click', navControl);
+document.getElementById("navToProjects").addEventListener('click', navControl);

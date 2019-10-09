@@ -22,13 +22,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#" onClick="navControl()" id="navToBio">BIO</a>
+          <a class="nav-link" href="#" id="navToBio">BIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onClick="navControl()" id="navToTechnologies">TECHNOLOGIES</a>
+          <a class="nav-link" href="#" id="navToTechnologies">TECHNOLOGIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" onClick="navControl()" id="navToProjects">PROJECTS</a>
+          <a class="nav-link" href="#" id="navToProjects">PROJECTS</a>
         </li>
       </ul>
     </div>
@@ -37,9 +37,11 @@
 
   <!-- Primary View -->
   <div class="fullPage jumbotron" id="bioPage">
-        <p>I am a highly driven, Graphic Artist and Marketeer with over 10 years of continuous achievement in marketing and graphic design. I am seeking ever-increasing challenges in creative fields, aiming to exploit my extensive expertise in the following:</p>
+        <h1>About Me</h1>
+        <p>I am a highly driven, Graphic Artist and Marketeer with over 10 years of continuous achievement in marketing and graphic design. I am seeking ever-increasing challenges in creative fields, aiming to exploit my extensive expertise in the fields of software design and development.</p>
   </div>
-  <div class="fullPage jumbotron d-flex" id="technologiesPage">
+  <div class="fullPage jumbotron hide" id="technologiesPage">
+      <h1>Technology & Skills</h1>
         <ul>
             <li>Adobe CC/Photoshop/Illustrator/InDesign</li>
             <li>Microsoft Office/Word, Excel, Power Point</li>
@@ -55,7 +57,7 @@
             <li>Copyrighting</li>
         </ul>
   </div>
-  <div class="fullPage d-flex" id="projectsPage"></div>
+  <div class="fullPage jumbotron hide" id="projectsPage"></div>
   <!-- End Primary View -->
 
   <!-- Footer -->

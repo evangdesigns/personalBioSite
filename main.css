@@ -16,7 +16,7 @@ h4 {
     margin-bottom:-5px;
 }
 .fullPage {
-    height:60vh;
+    margin: 20px;
 }
 #projectsPage{
     justify-content: center;
@@ -28,9 +28,11 @@ h4 {
     width:300px;
     padding: 10px;
 }
+.projectCard img{
+    width: 100%;
+}
 footer{
     background-color: #343a40;
-    
     padding:10px 50px;
 }
 .pageFooter {
@@ -43,12 +45,9 @@ i.socialFoot{
 footer > div {
     color:#ffffff;
 }
-#bioPage{
-    display: flex;
-}
-#technologiesPage{
-    display: none !important;
-}
-#projectsPage{
+.hide {
     display:none !important;
+}
+.show{
+    display:flex;
 }
