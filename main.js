@@ -3,7 +3,7 @@ console.log('This is my portfolio. There are many others like it, but this one i
 const projects = [
     {
         title: 'Cool Project', 
-        screenshot: 'http://gotoflashgames.com/files/file/033.jpg', 
+        screenshot: 'https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600', 
         description: 'This is the best project', // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
         available: true,
@@ -12,7 +12,7 @@ const projects = [
     },
     {
         title: 'PB&J', 
-        screenshot: 'http://gotoflashgames.com/files/file/033.jpg', 
+        screenshot: 'https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600', 
         description: 'This is the best project', // A good project description includes 'the what', 'the why', and 'the how'.
         technologiesUsed: 'HTML, CSS, Vanilla JavaScript, Version Control with Github',
         available: false,
@@ -28,25 +28,26 @@ const printToDom = (divId, textToPrint) => {
   
   const projectFilter = (projectsArr) => {
     let domString = ''
+    domString = `<h1 class="text-center">Projects</h1>`
     for (let i = 0; i < projectsArr.length; i ++) {
         const pro = projectsArr[i]
         domString += `
-            <div class="projectCard">
-                <div class="projectTitle">
+            <div class='projectCard'>
+                <div class='projectTitle'>
                         <h1>${pro.title}</h1>
                 </div>
-                <div class="projectInfo">
+                <div class='projectInfo'>
                     <center>
-                        <img src="${pro.screenshot}" alt="${pro.title} the ${pro.description}">
+                        <img src='${pro.screenshot}' alt='${pro.title} the ${pro.description}'>
                     </center>
-                    <div class="projectDeets">
+                    <div class='projectDeets'>
                         <h4>DESCRIPTION:</h4>
                         <p>${pro.description}</p>
                         <h4>TECHNOLOGIES:</h4>
                         <p>${pro.technologiesUsed}</p>
                     </div>
                 </div>
-                <button href="${pro.url}">CHECK IT OUT</button>
+                <button href='${pro.url}'>CHECK IT OUT</button>
             </div>
             `   
     };
@@ -60,5 +61,56 @@ const selectedProjects = [];
             selectedProjects.push(pro)
         }
     }
-// pass smaller list of pies back into placePies
+
 projectFilter(selectedProjects);
+
+
+let bioPage = document.getElementById('bioPage');
+let techPage = document.getElementById('technologiesPage');
+let projPage = document.getElementById('projectsPage');
+
+const showBio = () => {
+    bioPage.classList.remove('hide');
+    techPage.classList.add('hide');
+    projPage.classList.add('hide');
+};
+
+const showTech = () => {
+    bioPage.classList.add('hide');
+    techPage.classList.remove('hide');
+    projPage.classList.add('hide');
+};
+
+const showProj = () => {
+    bioPage.classList.add('hide');
+    techPage.classList.add('hide');
+    projPage.classList.remove('hide');
+};
+
+const navControl = (e) => {   
+    if (e.target.id === 'navToBio') {
+      showBio()
+      
+    } else if (e.target.id === 'navToTechnologies') {
+      showTech()
+        
+    } else if (e.target.id === 'navToProjects') {
+      showProj()
+      };
+  };
+
+const eventListen = () => {
+    let x = document.getElementsByClassName('jumbotron')
+    for (i = 0; i < x.length; i += 1) {
+        let current = x[i];
+        console.log(current);
+        current.addEventListener('click', (e) => {
+            navControl(e);
+        })
+    }
+};
+ 
+eventListen();
+document.getElementById("navToBio").addEventListener('click', navControl);
+document.getElementById("navToTechnologies").addEventListener('click', navControl);
+document.getElementById("navToProjects").addEventListener('click', navControl);
