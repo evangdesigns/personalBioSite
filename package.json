@@ -1,7 +1,7 @@
 {
   "name": "personal-bio-site",
   "version": "1.0.0",
-  "description": "## Description This is my personal biography site where you can find information on my abilities and skills with links to some of my favorite projects.",
+  "description": "This is my personal biography site where you can find information on my abilities and skills with links to some of my favorite projects.",
   "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
