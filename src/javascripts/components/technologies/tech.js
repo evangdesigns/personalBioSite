@@ -6,25 +6,24 @@ import utl from '../../helpers/utilities';
 const printTech = () => {
   const domString = `
   <h2>Technology & Skills</h2>
-      <ul>
-        <li>Adobe CC/Photoshop/Illustrator/InDesign</li>
-        <li>Microsoft Office/Word, Excel, Power Point</li>
-        <li>Multimedia/Web/GUI Design</li>
-        <li>Event Coordination, Planning & Execution</li>
-        <li>Social Media Management</li>
-        <li>Web Design HTML/CSS/Javascript</li>
-        <li>PC/Mac Proficiency</li>
-        <li>Photography & Photo Editing</li>
-        <li>Proofreading/Editing Design</li>
-        <li>Business Communication</li>
-        <li>Marketing Analytics</li>
-        <li>Copyrighting</li>
-      </ul>`;
+        <p>Adobe CC/Photoshop/Illustrator/InDesign</p>
+        <p>Microsoft Office/Word, Excel, Power Point</p>
+        <p>Multimedia/Web/GUI Design</p>
+        <p>Event Coordination, Planning & Execution</p>
+        <p>Social Media Management</p>
+        <p>Web Design HTML/CSS/Javascript</p>
+        <p>PC/Mac Proficiency</p>
+        <p>Photography & Photo Editing</p>
+        <p>Proofreading/Editing Design</p>
+        <p>Business Communication</p>
+        <p>Marketing Analytics</p>
+        <p>Copyrighting</p>
+      `;
   utl.printToDom('tech', domString);
 };
 
 // // Create chart instance
-// const chart = am4core.create('skillsChart', am4charts.XYChart);
+// const chart = am4core.create('tech', am4charts.XYChart);
 
 // // Add data
 // chart.data = [{
