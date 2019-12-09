@@ -1,92 +1,88 @@
+import $ from 'jquery';
 import 'bootstrap';
+import bio from './components/bio/bio';
+import tech from './components/technologies/tech';
+import '../styles/main.scss';
 
-const printToDom = (divId, textToPrint) => {
-  const selectedDiv = document.getElementById(divId);
-  selectedDiv.innerHTML = textToPrint;
+const init = () => {
+  bio.printBio();
+  tech.printTech();
 };
 
-const projectFilter = (projectsArr) => {
-  let domString = '';
-  domString = '<h1 class="text-center">Projects</h1>';
-  for (let i = 0; i < projectsArr.length; i + 1) {
-    const pro = projectsArr[i];
-    domString += `
-      <div class='projectCard'>
-        <div class='projectTitle'>
-          <h1>${pro.title}</h1>
-        </div>
-        <div class='projectInfo'>
-          <center>
-            <img src='${pro.screenshot}' alt='${pro.title} the ${pro.description}'>
-          </center>
-          <div class='projectDeets'>
-            <h4>DESCRIPTION:</h4>
-            <p>${pro.description}</p>
-            <h4>TECHNOLOGIES:</h4>
-            <p>${pro.technologiesUsed}</p>
-          </div>
-        </div>
-        <button href='${pro.url}'>CHECK IT OUT</button>
-      </div>
-      `;
-  }
-  printToDom('projectsPage', domString);
-};
+init();
 
-const selectedProjects = [];
-for (let i = 0; i < projects.length; i + 1) {
-  const pro = projects[i];
-  if (pro.available === true) {
-    selectedProjects.push(pro);
-  }
-}
+// const projectFilter = (projectsArr) => {
+//   let domString = '';
+//   domString = '<h1 class="text-center">Projects</h1>';
+//   for (let i = 0; i < projectsArr.length; i + 1) {
+//     const pro = projectsArr[i];
+//     domString += `
+//       <div class='projectCard'>
+//         <div class='projectTitle'>
+//           <h1>${pro.title}</h1>
+//         </div>
+//         <div class='projectInfo'>
+//           <center>
+//             <img src='${pro.screenshot}' alt='${pro.title} the ${pro.description}'>
+//           </center>
+//           <div class='projectDeets'>
+//             <h4>DESCRIPTION:</h4>
+//             <p>${pro.description}</p>
+//             <h4>TECHNOLOGIES:</h4>
+//             <p>${pro.technologiesUsed}</p>
+//           </div>
+//         </div>
+//         <button href='${pro.url}'>CHECK IT OUT</button>
+//       </div>
+//       `;
+//   }
+//   printToDom('projectsPage', domString);
+// };
 
-projectFilter(selectedProjects);
+// const selectedProjects = [];
+// for (let i = 0; i < projects.length; i + 1) {
+//   const pro = projects[i];
+//   if (pro.available === true) {
+//     selectedProjects.push(pro);
+//   }
+// }
+
+// projectFilter(selectedProjects);
 
 
-const bioPage = document.getElementById('bioPage');
-const techPage = document.getElementById('technologiesPage');
-const projPage = document.getElementById('projectsPage');
+const bioPage = $('#bio');
+const techPage = $('#tech');
+const projPage = $('#projects');
 
 const showBio = () => {
-  bioPage.classList.remove('hide');
-  techPage.classList.add('hide');
-  projPage.classList.add('hide');
+  bioPage.delay(500).slideToggle();
+  techPage.slideUp();
+  projPage.slideUp();
 };
 
 const showTech = () => {
-  bioPage.classList.add('hide');
-  techPage.classList.remove('hide');
-  projPage.classList.add('hide');
+  bioPage.slideUp();
+  techPage.delay(500).slideToggle();
+  projPage.slideUp();
 };
 
 const showProj = () => {
-  bioPage.classList.add('hide');
-  techPage.classList.add('hide');
-  projPage.classList.remove('hide');
+  bioPage.slideUp();
+  techPage.slideUp();
+  projPage.delay(500).slideToggle();
 };
 
 const navControl = (e) => {
-  if (e.target.id === 'navToBio') {
+  const clicker = e.target.id;
+  if (clicker === 'navToBio') {
     showBio();
-  } else if (e.target.id === 'navToTechnologies') {
+  } else if (clicker === 'navToTechnologies') {
     showTech();
-  } else if (e.target.id === 'navToProjects') {
+  } else if (clicker === 'navToProjects') {
     showProj();
   }
 };
 
-const eventListen = () => {
-  const x = document.getElementsByClassName('jumbotron');
-  for (let i = 0; i < x.length; i += 1) {
-    const current = x[i];
-    current.addEventListener('click', (e) => {
-      navControl(e);
-    });
-  }
-};
-
-eventListen();
-document.getElementById('navToBio').addEventListener('click', navControl);
-document.getElementById('navToTechnologies').addEventListener('click', navControl);
-document.getElementById('navToProjects').addEventListener('click', navControl);
+$('#navToBio').on('click', navControl);
+$('#navToTechnologies').on('click', navControl);
+$('$navToProjects').o('click', navControl);

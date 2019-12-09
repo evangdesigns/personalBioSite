@@ -1,50 +1,61 @@
 @import "~bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 body {
-    font-family: 'Roboto', sans-serif;
     width:100%;
     margin:0 auto;
     padding:0;
+    background-color:grey;
 }
-.navbar{
-    background-color:#333333 !important;
+#nameTag {
+    width: 70% ;
+    background-color: #2083c5;
+    border-radius:30px;
+    margin: 100px 0 0;
+}
+#nameTagHeader {
+  h1 {
+    color:white !important;
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom:-10px;
+  }
+  p {
+    font-size: 40px;
+    text-align:justify;
+    color:white;
+    font-weight:400;
+    margin-top:0px;
+  }
+}
+#myName {
+  font-family: 'Permanent Marker', cursive;
+  background-color: white;
+  padding: 80px 0;
+  h1 {
+    font-size: 100px;
+    color: black !important;
+  }
+}
+#nameTagFooter {
+  li{
+    font-size:20px;
+  }
+}
 
-}
-h1 {
-    text-align: center;
-}
-h4 {
-    margin-bottom:-5px;
-}
-.fullPage {
-    margin: 20px;
-}
-#projectsPage{
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-.projectCard{
-    background-color: rgba(255, 255, 255, 75%);
-    width:300px;
-    padding: 10px;
-}
-.projectCard img{
-    width: 100%;
-}
-footer{
-    background-color: #343a40;
-    padding:10px 50px;
-}
-.pageFooter {
-    justify-content:center
-}
-i.socialFoot{
-    font-size: 4em;
-    color:#ffffff;
-}
-footer > div {
-    color:#ffffff;
+footer {
+  margin-top: 20px;
+  padding:10px 50px;
+  justify-content:center;
+  p, i {
+    color:darkgrey;
+  }
+  a {
+    color:darkgrey;
+    &:hover{
+      color:black;
+      text-decoration: none;
+    }
+  }
 }
 .hide {
     display:none !important;
