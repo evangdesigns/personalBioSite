@@ -1,3 +1,4 @@
+// import nav from '../innerNav/innerNav';
 import utl from '../../helpers/utilities';
 import './bio.scss';
 
