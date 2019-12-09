@@ -1,0 +1,29 @@
+{
+  "project1": {
+    "title": "Pint-E-Rest",
+    "screenshot": "https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600",
+    "description": "This is the best project (A good project description includes 'the what', 'the why', and 'the how'.)",
+    "technologiesUsed": [ "HTML", "CSS", "ES6" ],
+    "available": true,
+    "url": "https://github.com/evangdesigns/petAdoption",
+    "githubUrl": "https://github.com/evangdesigns/petAdoption"
+  },
+  "project2": {
+    "title": "Solar System",
+    "screenshot": "https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600",
+    "description": "This is the best project",
+    "technologiesUsed": [ "HTML", "CSS", "ES6" ],
+    "available": true,
+    "url": "https://github.com/evangdesigns/petAdoption",
+    "githubUrl": "https://github.com/evangdesigns/petAdoption"
+  },
+  "project3": {
+    "title": "Tamagotchi",
+    "screenshot": "https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600",
+    "description": "This is the best project",
+    "technologiesUsed": [ "HTML", "CSS", "ES6" ],
+    "available": true,
+    "url": "https://github.com/evangdesigns/petAdoption",
+    "githubUrl": "https://github.com/evangdesigns/petAdoption"
+  }
+}
