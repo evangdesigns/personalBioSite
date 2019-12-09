@@ -85,4 +85,4 @@ const navControl = (e) => {
 
 $('#navToBio').on('click', navControl);
 $('#navToTechnologies').on('click', navControl);
-$('$navToProjects').o('click', navControl);
+$('#navToProjects').on('click', navControl);
