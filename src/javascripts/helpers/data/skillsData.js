@@ -4,7 +4,11 @@ import apiKeys from '../apiKeys.json';
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
 const getSkills = () => new Promise((resolve, reject) => {
+<<<<<<< HEAD
   axios.get(`${baseUrl}/skills.json`)
+=======
+  axios.get(`${baseUrl}/skills.json?orderBy="boardId"&equalTo="${skillsId}"`)
+>>>>>>> master
     .then((response) => {
       const demSkills = response.data;
       const skills = [];
