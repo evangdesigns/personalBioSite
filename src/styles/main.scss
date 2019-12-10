@@ -1,14 +1,15 @@
+@import './variables';
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 body {
     width:100%;
     margin:0 auto;
     padding:0;
-    background-color:lightgray;
+    background-color:$secondColor;
 }
 #nameTag {
     width: 70% ;
-    background-color: #2083c5;
+    background-color: $mainColor;
     border-radius:30px;
     margin: 100px 0 0;
 }
@@ -41,25 +42,21 @@ body {
     font-size:20px;
   }
 }
-
 footer {
   margin-top: 20px;
-  padding:10px 50px;
   justify-content:center;
   p, i {
-    color:darkgrey;
+    color:$triColor;
   }
-  a {
-    color:darkgrey;
+  a > i {
+    color:$triColor;
+    margin: 10px 5px 0;
     &:hover{
-      color:black;
+      color:$mainColor;
       text-decoration: none;
     }
   }
 }
 .hide {
     display:none !important;
-}
-.show{
-    display:flex;
 }
