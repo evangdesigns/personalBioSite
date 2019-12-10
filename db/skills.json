@@ -2,26 +2,41 @@
   "skill1": {
     "title": "HTML5",
     "proficiency": 83,
-    "icon": "<i class=\"fab fa-html5\"></i>"
+    "icon": "fab fa-html5"
   },
   "skill2": {
     "title": "CSS",
     "proficiency": 88,
-    "icon": "<i class=\"fab fa-css3-alt\"></i>"
+    "icon": "fab fa-css3-alt"
   },
   "skill3": {
     "title": "SASS",
     "proficiency": 67,
-    "icon": "<i class=\"fab fa-sass\"></i>"
+    "icon": "fab fa-sass"
   },
   "skill4": {
-    "title": "Javascript",
-    "proficiency": 43,
-    "icon": "<i class=\"fab fa-js-square\"></i>"
+    "title": "Bootstrap",
+    "proficiency": 80,
+    "icon": "fab fa-bootstrap"
   },
   "skill5": {
+    "title": "Javascript",
+    "proficiency": 43,
+    "icon": "fab fa-js-square"
+  },
+  "skill6": {
+    "title": "PHP",
+    "proficiency": 67,
+    "icon": "fab fa-php"
+  },
+  "skill7": {
+    "title": "Javascript",
+    "proficiency": 4,
+    "icon": "fab fa-react"
+  },
+  "skill8": {
     "title": "Wordpress",
     "proficiency": 83,
-    "icon": "<i class=\"fab fa-wordpress\"></i>"
+    "icon": "fab fa-wordpress"
   }
 }

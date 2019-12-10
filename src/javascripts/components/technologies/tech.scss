@@ -1,20 +1,21 @@
 #tech {
   background-color: white;
-  padding: 0 20px 40px;
   text-align:center;
-  ul {
-    font-size: 20px;
-    font-weight: 300;
+  h2 {
+    margin-bottom: 10px;
   }
 }
 
 .meter {
-  width: 25px;
-	position: relative;
+  width: 40px;
+  height: 200px;
+  margin: 0 10px;
   span {
     display: block;
-    position: relative;
     overflow: hidden;
     background-color:#2083c5;
+  }
+  p {
+    margin: 5px 0;
   }
 }
