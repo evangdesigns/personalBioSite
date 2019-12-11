@@ -1,29 +1,29 @@
 {
   "project1": {
     "title": "Pint-E-Rest",
-    "screenshot": "https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600",
-    "description": "This is the best project (A good project description includes 'the what', 'the why', and 'the how'.)",
-    "technologiesUsed": [ "HTML", "CSS", "ES6" ],
-    "available": true,
-    "url": "https://github.com/evangdesigns/petAdoption",
-    "githubUrl": "https://github.com/evangdesigns/petAdoption"
+    "screenshot": "https://github.com/evangdesigns/pinterest/blob/master/screenshots/boardsPage.png?raw=true",
+    "description": "Pint-e-rest is a Pinterest-esk application that allows users to save images and links they are interested in to \"cards\", and sort them by board.",
+    "technologiesUsed": [ "HTML", "CSS", "JS", "Webpack", "ES6 Modules", "Boostrap", "JQuery", "firebase" ],
+    "url": "https://pinterest-dd90f.firebaseapp.com/",
+    "githubUrl": "https://github.com/evangdesigns/pinterest",
+    "available": true
   },
   "project2": {
     "title": "Solar System",
-    "screenshot": "https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600",
-    "description": "This is the best project",
-    "technologiesUsed": [ "HTML", "CSS", "ES6" ],
-    "available": true,
-    "url": "https://github.com/evangdesigns/petAdoption",
-    "githubUrl": "https://github.com/evangdesigns/petAdoption"
+    "screenshot": "https://github.com/evangdesigns/solarSystem/blob/master/Screenshots/hover.png?raw=true",
+    "description": "Solar System is an application that allows users to search and learn about the planets in our solar system.",
+    "technologiesUsed": [ "HTML", "CSS", "JS", "Webpack", "ES6 Modules", "Boostrap", "JQuery", "firebase" ],
+    "url": "https://github.com/evangdesigns/solarSystem",
+    "githubUrl": "https://github.com/evangdesigns/solarSystem",
+    "available": true
   },
   "project3": {
     "title": "Tamagotchi",
-    "screenshot": "https://static.smuckersrms.com/PhotoImage.ashx?recipeid=8491&w=600&h=600",
-    "description": "This is the best project",
-    "technologiesUsed": [ "HTML", "CSS", "ES6" ],
+    "screenshot": "https://github.com/evangdesigns/tamagotchi/blob/master/src/assets/images/Screen%20Shot%202019-10-24%20at%208.50.16%20PM.png?raw=true",
+    "description": "The classic key chain from the 90s is now in your browser! Kepp your pet alive by feeding, playing, fighting, and sleeping.",
+    "technologiesUsed": [ "HTML", "CSS", "JS", "Webpack" ],
     "available": true,
-    "url": "https://github.com/evangdesigns/petAdoption",
-    "githubUrl": "https://github.com/evangdesigns/petAdoption"
+    "url": "https://github.com/evangdesigns/tamagotchi",
+    "githubUrl": "https://github.com/evangdesigns/tamagotchi"
   }
 }
