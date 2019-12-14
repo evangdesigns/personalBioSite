@@ -1,19 +1,22 @@
 import './innerNav.scss';
 
 const innerNav = () => {
-  let nav = '';
-  nav += `
+  const nav = `
+  <nav class="navbar navbar-light navbar-expand justify-content-center">
+    <div id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navToBio">BIO</a>
+          <a class="nav-link" href="#">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navToTechnologies">TECHNOLOGIES</a>
+          <a class="nav-link" href="#">TECHNOLOGIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" id="navToProjects">PROJECTS</a>
+          <a class="nav-link" href="#">PROJECTS</a>
         </li>
-      </ul>`;
+      </ul>
+    </div>
+  </nav>`;
   return nav;
 };
 

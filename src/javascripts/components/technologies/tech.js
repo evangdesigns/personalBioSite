@@ -8,7 +8,7 @@ const printTech = () => {
   skillsData.getSkills()
     .then((skills) => {
       skills.forEach((s) => {
-        domString += `<div class="meter">
+        domString += `<div class="meter class="align-items-basline">
         <span style="height:${s.proficiency}%;"></span>
         <p><i class="${s.icon} fa-2x"></i></p>
         </div>`;
