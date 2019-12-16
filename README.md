@@ -5,7 +5,7 @@ This is my personal biography site where you can find information on my abilitie
 
 
 ## Screenshots
-![Bio Site Preview](https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/Screen%20Shot%202019-12-09%20at%202.37.12%20PM.png?raw=true)
+![Bio Site Preview](https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/Screen%20Shot%202019-12-16%20at%203.43.48%20PM.png?raw=true)
 
 ## Instructions for how to run the project
 * Clone down this project from [Github](https://github.com/evangdesigns/pinterest).
