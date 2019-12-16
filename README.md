@@ -15,7 +15,7 @@ This is my personal biography site where you can find information on my abilitie
 * In your browser, navigate to `https://localhost:8080`;
 
 ## Demo
-[Preview the app here!](https://bio-site-7b36e.firebaseapp.com/)
+Preview it here: [EvanGDesigns.com](https://evangdesigns.com)
 
 ## Contributors
 * [Evan Grabenstein](https://github.com/evangdesigns)
