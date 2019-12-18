@@ -4,12 +4,14 @@ import './tech.scss';
 
 const printTech = () => {
   let domString = `<h2>TECHNOLOGY & SKILLS</h2>
-  <div class="d-flex justify-content-center align-items-baseline">`;
+  <div class="d-flex justify-content-center">`;
   skillsData.getSkills()
     .then((skills) => {
       skills.forEach((s) => {
-        domString += `<div class="meter class="align-items-basline">
+        domString += `<div>
+        <div class="meter">
         <span style="height:${s.proficiency}%;"></span>
+        </div>
         <p><i class="${s.icon} fa-2x"></i></p>
         </div>`;
       });
