@@ -7,11 +7,13 @@ body {
     padding:0;
     background-color:$secondColor;
 }
+
 #nameTag {
-    width: 70% ;
-    background-color: $mainColor;
-    border-radius:30px;
-    margin: 100px 0 0;
+  min-width: 300px;
+  max-width: 700px;
+  background-color: $mainColor;
+  border-radius:30px;
+  margin: 100px auto;
 }
 #nameTagHeader {
   h1 {

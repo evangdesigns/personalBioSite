@@ -4,11 +4,11 @@ import './projects.scss';
 
 const printProjects = () => {
   let domString = `<h2 class="text-center">PROJECTS</h2>
-  <div class="d-flex flex-wrap justify-content-center">`;
+  <div class="justify-content-center">`;
   projectData.getProjects()
     .then((projects) => {
       projects.forEach((p) => {
-        domString += `<div class="card projectCard">
+        domString += `<hr><div class="container projectCard">
         <h4>${p.title}</h4>
         <center>
           <img src='${p.screenshot}' alt="${p.title}">
@@ -17,8 +17,8 @@ const printProjects = () => {
         <h6>TECHNOLOGIES:</h6>
         <p>${p.technologiesUsed}</p>
         <div class="text-center">
-          <a href="${p.githubUrl}" target="_black"><i class="fab fa-github-square fa-2x"></i></a>
-          <a href="${p.url} target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+          <a href="${p.githubUrl}" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
+          <a href="${p.url} target="_blank"><i class="fas fa-globe fa-3x"></i></a>
         </div>
       </div>
       `;

@@ -7,15 +7,13 @@
 }
 
 .meter {
+  position:relative;
   width: 40px;
   height: 200px;
   margin: 0 10px;
   span {
-    display: block;
+    display:block;
     overflow: hidden;
     background-color:#2083c5;
-  }
-  p {
-    margin: 5px 0;
   }
 }
