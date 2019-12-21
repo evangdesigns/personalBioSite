@@ -3,27 +3,40 @@
     "title": "Pint-E-Rest",
     "screenshot": "https://github.com/evangdesigns/pinterest/blob/master/screenshots/boardsPage.png?raw=true",
     "description": "Pint-e-rest is a Pinterest-esk application that allows users to save images and links they are interested in to \"cards\", and sort them by board.",
-    "technologiesUsed": [ "HTML", "CSS", "JS", "Webpack", "ES6 Modules", "Boostrap", "JQuery", "firebase" ],
+    "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack", "ES6 Modules", "fab fa-bootstrap", "JQuery", "firebase" ],
     "url": "https://pinterest-dd90f.firebaseapp.com/",
     "githubUrl": "https://github.com/evangdesigns/pinterest",
-    "available": true
+    "available": true,
+    "type": "web"
   },
   "project2": {
     "title": "Solar System",
     "screenshot": "https://github.com/evangdesigns/solarSystem/blob/master/Screenshots/hover.png?raw=true",
     "description": "Solar System is an application that allows users to search and learn about the planets in our solar system.",
-    "technologiesUsed": [ "HTML", "CSS", "JS", "Webpack", "ES6 Modules", "Boostrap", "JQuery", "firebase" ],
+    "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack", "ES6 Modules", "fab fa-bootstrap", "JQuery", "firebase" ],
     "url": "https://github.com/evangdesigns/solarSystem",
     "githubUrl": "https://github.com/evangdesigns/solarSystem",
-    "available": true
+    "available": true,
+    "type": "web"
   },
   "project3": {
     "title": "Tamagotchi",
     "screenshot": "https://github.com/evangdesigns/tamagotchi/blob/master/src/assets/images/Screen%20Shot%202019-10-24%20at%208.50.16%20PM.png?raw=true",
     "description": "The classic key chain from the 90s is now in your browser! Kepp your pet alive by feeding, playing, fighting, and sleeping.",
-    "technologiesUsed": [ "HTML", "CSS", "JS", "Webpack" ],
-    "available": true,
+    "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack" ],
     "url": "https://github.com/evangdesigns/tamagotchi",
-    "githubUrl": "https://github.com/evangdesigns/tamagotchi"
+    "githubUrl": "https://github.com/evangdesigns/tamagotchi",
+    "available": true,
+    "type": "web"
+  },
+  "project4": {
+    "title": "Inebriated Shakespeare",
+    "screenshot": "../../../images/screenshots/inebriatedShakespeare_screenshot.png",
+    "description": "The classic key chain from the 90s is now in your browser! Kepp your pet alive by feeding, playing, fighting, and sleeping.",
+    "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "fab fa-wordpress" ],
+    "url": "https://inebriatedshakes.com",
+    "githubUrl": "https://github.com/evangdesigns/tamagotchi",
+    "available": true,
+    "type": "web"
   }
 }
