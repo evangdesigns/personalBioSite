@@ -1,13 +1,19 @@
 @import './variables';
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 body {
+    font-family: 'Nunito', sans-serif;
     width:100%;
     margin:0 auto;
     padding:0;
     background-color:$secondColor;
 }
-
+hr:not(:last-child) {
+  border-style:inset;
+  border: 1px solid $mainColor !important;
+  width: 95% !important;
+}
 #nameTag {
   min-width: 300px;
   max-width: 700px;

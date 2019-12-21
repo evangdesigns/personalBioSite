@@ -9,24 +9,33 @@ const printProjects = () => {
     .then((projects) => {
       projects.forEach((p) => {
         const techIco = p.technologiesUsed;
-        domString += `<hr><div class="container projectCard">
-        <h4>${p.title}</h4>
-        <center>
-          <img src='${p.screenshot}' alt="${p.title}">
-        </center>
-        <p>${p.description}</p>
-        <h6>TECHNOLOGIES:</h6>
-        <p>`;
+        domString += `
+        <div class="container projectCard">
+          <h4 class="text-center">${p.title}</h4>
+          <center>
+            <img src='${p.screenshot}' alt="${p.title}">
+          </center>
+          <p class="text-center">${p.description}</p>
+          <div class="d-flex justify-content-center">
+            <div>
+              <h5 class="text-center">TECHNOLOGIES</h5>
+              <p class="text-center">`;
         techIco.forEach((i) => {
           domString += `
-          <i class="${i} fa-2x"></i>`;
+              <i class="${i} fa-2x"></i>`;
         });
         domString += `</p>
-        <div class="text-center">
-          <a href="${p.githubUrl}" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
-          <a href="${p.url} target="_blank"><i class="fas fa-globe fa-3x"></i></a>
-        </div>
-      </div>
+            </div>
+            <div class="col-1"></div>
+            <div>
+              <h5 class="text-center">CHECK IT OUT</h5>
+              <p class="text-center">
+                <a href="${p.githubUrl}" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
+                <a href="${p.url} target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+              </p>
+            </div>
+          </div>
+        </div><hr>
       `;
       });
       domString += '</div>';

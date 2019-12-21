@@ -31,11 +31,11 @@
   },
   "project4": {
     "title": "Inebriated Shakespeare",
-    "screenshot": "../../../images/screenshots/inebriatedShakespeare_screenshot.png",
-    "description": "The classic key chain from the 90s is now in your browser! Kepp your pet alive by feeding, playing, fighting, and sleeping.",
+    "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/inebriatedShakespeare_screenshot.png?raw=true",
+    "description": "A website for the infamous theater troup Inebriated Shakespeare. It allows patrons to get up-to-date information on current shows, schedules, locations, and cast bios. It also allows Patrons to purchase tickets to upcoming shows and Inebriated Shakespeare original merchandise.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "fab fa-wordpress" ],
     "url": "https://inebriatedshakes.com",
-    "githubUrl": "https://github.com/evangdesigns/tamagotchi",
+    "githubUrl": null,
     "available": true,
     "type": "web"
   }
