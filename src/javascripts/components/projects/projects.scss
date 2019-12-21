@@ -1,24 +1,31 @@
-#projects{
-  background-color: white;
-  padding: 0 20px 40px;
+@import './../../../styles/variables.scss';
+
+#projects {
+  background-color: $white;
+  h2 {
+    font-family: 'Permanent Marker', cursive;
+    background-color:$mainColor;
+    color: $white;
+    padding: 10px 0;
+  }
 }
 .projectCard{
   width:300px;
   padding: 10px;
   margin: 20px 6px;
-  // h4 {
-  //   font-size:18px;
-  // }
-  // p {
-  //   font-size:12px;
-  // }
+  padding: 0 20px;
   img {
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px $triColor;
+  }
+  p {
+    margin-top: 15px;
   }
 }
 a.fas {
-  color:#2083c5 !important;
+  color: $mainColor !important;
   &:hover{
-    color:darkgrey;
+    color: $triColor;
   }
 }
