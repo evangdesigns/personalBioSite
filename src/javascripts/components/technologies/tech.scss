@@ -1,19 +1,35 @@
+@import './../../../styles/variables.scss';
+
 #tech {
-  background-color: white;
+  background-color:$white;
   text-align:center;
+  padding-bottom:50px;
   h2 {
-    margin-bottom: 10px;
+    font-family: 'Permanent Marker', cursive;
+    background-color:$mainColor;
+    color: $white;
+    padding: 10px 0;
   }
 }
-
+.graph {
+  height:200px;
+}
+.outer-div{
+  height:100%;
+  p {
+    margin: 5px 0;
+  }
+}
 .meter {
-  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 40px;
-  height: 200px;
+  height:80%;
   margin: 0 10px;
   span {
     display:block;
     overflow: hidden;
-    background-color:#2083c5;
+    background-color:$mainColor;
   }
 }
