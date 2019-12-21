@@ -8,6 +8,7 @@ const printProjects = () => {
   projectData.getProjects()
     .then((projects) => {
       projects.forEach((p) => {
+        const techIco = p.technologiesUsed;
         domString += `<hr><div class="container projectCard">
         <h4>${p.title}</h4>
         <center>
@@ -15,7 +16,12 @@ const printProjects = () => {
         </center>
         <p>${p.description}</p>
         <h6>TECHNOLOGIES:</h6>
-        <p>${p.technologiesUsed}</p>
+        <p>`;
+        techIco.forEach((i) => {
+          domString += `
+          <i class="${i} fa-2x"></i>`;
+        });
+        domString += `</p>
         <div class="text-center">
           <a href="${p.githubUrl}" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
           <a href="${p.url} target="_blank"><i class="fas fa-globe fa-3x"></i></a>
