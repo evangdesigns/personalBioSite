@@ -1,9 +1,12 @@
+// import nav from '../innerNav/innerNav';
 import projectData from '../../helpers/data/projectData';
 import utl from '../../helpers/utilities';
 import './projects.scss';
 
 const printProjects = () => {
-  let domString = `<h2 class="text-center">PROJECTS</h2>
+  let domString = '';
+  // domString += nav.innerNav();
+  domString += `<h2 class="text-center">PROJECTS</h2>
   <div class="justify-content-center">`;
   projectData.getProjects()
     .then((projects) => {
@@ -29,9 +32,13 @@ const printProjects = () => {
             <div class="col-1"></div>
             <div>
               <h5 class="text-center">CHECK IT OUT</h5>
-              <p class="text-center">
-                <a href="${p.githubUrl}" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-                <a href="${p.url} target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+              <p class="text-center">`;
+        if (p.githubUrl === 'null') {
+          domString += '';
+        } else {
+          domString += `<a href="${p.githubUrl}" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>`;
+        }
+        domString += ` <a href="${p.url} target="_blank"><i class="fas fa-globe fa-2x"></i></a>
               </p>
             </div>
           </div>

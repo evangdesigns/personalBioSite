@@ -35,7 +35,7 @@
     "description": "A website for the infamous theater troup Inebriated Shakespeare. It allows patrons to get up-to-date information on current shows, schedules, locations, and cast bios. It also allows Patrons to purchase tickets to upcoming shows and Inebriated Shakespeare original merchandise.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "fab fa-wordpress" ],
     "url": "https://inebriatedshakes.com",
-    "githubUrl": null,
+    "githubUrl": "null",
     "available": true,
     "type": "web"
   }

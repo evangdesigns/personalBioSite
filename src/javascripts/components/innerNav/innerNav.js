@@ -1,23 +1,26 @@
 import './innerNav.scss';
+import 'bootstrap';
 
 const innerNav = () => {
-  const nav = `
-  <nav class="navbar navbar-light navbar-expand justify-content-center">
+  let domString = '';
+  domString += `<div class="innerNav">
+  <nav class="navbar navbar-dark navbar-expand justify-content-center">
     <div id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">ABOUT</a>
+          <button class=" btn btn-link nav-link navToBio" href="#">ABOUT</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">TECHNOLOGIES</a>
+        <button class=" btn btn-link nav-link navToTechnologies" href="#">TECHNOLOGIES</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PROJECTS</a>
+        <button class=" btn btn-link nav-link navToProjects" href="#">PROJECTS</button>
         </li>
       </ul>
     </div>
-  </nav>`;
-  return nav;
+  </nav>
+  </div>`;
+  return domString;
 };
 
 export default { innerNav };
