@@ -40,10 +40,9 @@ hr:not(:last-child) {
   font-family: 'Permanent Marker', cursive;
   background-color: white;
   padding: 80px 0;
-  h1 {
-    font-size: 100px;
-    color: black !important;
-  }
+  font-size: 100px;
+  color: black !important;
+  margin:0;
 }
 #nameTagFooter {
   li{

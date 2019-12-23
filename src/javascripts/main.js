@@ -35,6 +35,12 @@ const showProj = () => {
   projPage.delay(500).slideToggle();
 };
 
+const collapseAll = () => {
+  bioPage.slideUp();
+  techPage.slideUp();
+  projPage.slideUp();
+};
+
 const navControl = (e) => {
   const clicker = e.target.id;
   if (clicker === 'navToBio') {
@@ -43,9 +49,12 @@ const navControl = (e) => {
     showTech();
   } else if (clicker === 'navToProjects') {
     showProj();
+  } else if (clicker === 'myName') {
+    collapseAll();
   }
 };
 
-$('#navToBio').on('click', navControl);
-$('#navToTechnologies').on('click', navControl);
-$('#navToProjects').on('click', navControl);
+$('.navToBio').click(navControl);
+$('.navToTechnologies').click(navControl);
+$('.navToProjects').click(navControl);
+$('#myName').click(navControl);

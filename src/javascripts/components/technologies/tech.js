@@ -3,7 +3,8 @@ import utl from '../../helpers/utilities';
 import './tech.scss';
 
 const printTech = () => {
-  let domString = `<h2>TECHNOLOGY & SKILLS</h2>
+  let domString = '';
+  domString += `<h2>TECHNOLOGIES</h2>
   <div class="d-flex justify-content-center graph">`;
   skillsData.getSkills()
     .then((skills) => {

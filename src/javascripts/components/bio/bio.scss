@@ -1,3 +1,5 @@
+@import './../../../styles/variables.scss';
+
 #bio {
   background-color: white;
   p {
@@ -8,8 +10,9 @@
   }
 }
 .bioInfo {
+  padding: 10px;
   img {
-    width:250px;
-    border-radius: 100px;
+    width:150px;
+    border-radius: 999px;
   }
 }
