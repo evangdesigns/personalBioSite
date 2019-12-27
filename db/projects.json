@@ -1,7 +1,7 @@
 {
   "project1": {
     "title": "Pint-E-Rest",
-    "screenshot": "https://github.com/evangdesigns/pinterest/blob/master/screenshots/boardsPage.png?raw=true",
+    "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/pint-e-rest_screenshot.jpg?raw=true",
     "description": "Pint-e-rest is a Pinterest-esk application that allows users to save images and links they are interested in to \"cards\", and sort them by board.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack", "ES6 Modules", "fab fa-bootstrap", "JQuery", "firebase" ],
     "url": "https://pinterest-dd90f.firebaseapp.com/",
@@ -11,7 +11,7 @@
   },
   "project2": {
     "title": "Solar System",
-    "screenshot": "https://github.com/evangdesigns/solarSystem/blob/master/Screenshots/hover.png?raw=true",
+    "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/solarSystem_screenshot.jpg?raw=true",
     "description": "Solar System is an application that allows users to search and learn about the planets in our solar system.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack", "ES6 Modules", "fab fa-bootstrap", "JQuery", "firebase" ],
     "url": "https://github.com/evangdesigns/solarSystem",
@@ -21,7 +21,7 @@
   },
   "project3": {
     "title": "Tamagotchi",
-    "screenshot": "https://github.com/evangdesigns/tamagotchi/blob/master/src/assets/images/Screen%20Shot%202019-10-24%20at%208.50.16%20PM.png?raw=true",
+    "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/tomagotchi_screenshot.jpg?raw=true",
     "description": "The classic key chain from the 90s is now in your browser! Kepp your pet alive by feeding, playing, fighting, and sleeping.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack" ],
     "url": "https://github.com/evangdesigns/tamagotchi",
@@ -31,7 +31,7 @@
   },
   "project4": {
     "title": "Inebriated Shakespeare",
-    "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/inebriatedShakespeare_screenshot.png?raw=true",
+    "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/inebriatedShakespeare_screenshot.jpg?raw=true",
     "description": "A website for the infamous theater troup Inebriated Shakespeare. It allows patrons to get up-to-date information on current shows, schedules, locations, and cast bios. It also allows Patrons to purchase tickets to upcoming shows and Inebriated Shakespeare original merchandise.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "fab fa-wordpress" ],
     "url": "https://inebriatedshakes.com",
