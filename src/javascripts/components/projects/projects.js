@@ -45,7 +45,7 @@ const printProjects = () => {
         } else {
           domString += `<a href="${p.githubUrl}" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>`;
         }
-        domString += ` <a href="${p.url} target="_blank"><i class="fas fa-globe fa-2x"></i></a>
+        domString += ` <a href="${p.url}" target="_blank"><i class="fas fa-globe fa-2x"></i></a>
               </p>
             </div>
           </div>
