@@ -14,7 +14,7 @@
     "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/solarSystem_screenshot.jpg?raw=true",
     "description": "Solar System is an application that allows users to search and learn about the planets in our solar system.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack", "ES6 Modules", "fab fa-bootstrap", "JQuery", "firebase" ],
-    "url": "https://github.com/evangdesigns/solarSystem",
+    "url": "https://solarsystem-18df9.firebaseapp.com/",
     "githubUrl": "https://github.com/evangdesigns/solarSystem",
     "available": true,
     "type": "web"
@@ -24,7 +24,7 @@
     "screenshot": "https://github.com/evangdesigns/personalBioSite/blob/master/src/images/screenshot/tomagotchi_screenshot.jpg?raw=true",
     "description": "The classic key chain from the 90s is now in your browser! Kepp your pet alive by feeding, playing, fighting, and sleeping.",
     "technologiesUsed": [ "fab fa-html5", "fab fa-css3-alt", "fab fa-js-square", "Webpack" ],
-    "url": "https://github.com/evangdesigns/tamagotchi",
+    "url": "https://tamagotchi-fb7a8.firebaseapp.com",
     "githubUrl": "https://github.com/evangdesigns/tamagotchi",
     "available": true,
     "type": "web"

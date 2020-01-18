@@ -30,8 +30,8 @@
     "icon": "fab fa-php"
   },
   "skill7": {
-    "title": "Javascript",
-    "proficiency": 4,
+    "title": "React",
+    "proficiency": 30,
     "icon": "fab fa-react"
   },
   "skill8": {
